@@ -1,0 +1,30 @@
+{
+  "name": "file-structure-template",
+  "version": "1.0.0",
+  "description": "A File structure template for express, reactJs App",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "is-ci || husky install",
+    "test": "cd server && npm run test",
+    "start": "cd server && npm run start",
+    "start:dev": "cd server && npm run start:dev",
+    "lint:fix": "cd server && npm run lint:fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinaYahya/file-structure-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinaYahya/file-structure-template/issues"
+  },
+  "homepage": "https://github.com/LinaYahya/file-structure-template#readme",
+  "devDependencies": {
+    "husky": "^8.0.2"
+  },
+  "dependencies": {
+    "is-ci": "^3.0.1"
+  }
+}
