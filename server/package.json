@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start:dev": "cross-env NODE_ENV=development nodemon src/index.ts",
+    "start": "NODE_ENV=production node dist/index.js",
+    "lint": "eslint --ext .ts ./",
+    "lint:fix": "npm run lint --fix"
   },
   "keywords": [],
   "author": "",
