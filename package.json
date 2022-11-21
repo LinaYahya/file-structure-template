@@ -4,6 +4,7 @@
   "description": "A File structure template for express, reactJs App",
   "main": "index.js",
   "scripts": {
+    "update": "cd server && npm run update:package && cd ../client && npm run update:package",
     "init": "cd server && npm install && cd ../client && npm i",
     "install": "npm run init",
     "postinstall": "npm update",

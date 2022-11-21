@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "update:package": "npx npm-check-updates -u && npm update",
     "test": "jest",
     "build": "tsc",
     "start:dev": "cross-env NODE_ENV=development nodemon src/index.ts",
