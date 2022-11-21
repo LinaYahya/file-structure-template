@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "build": "tsc",
     "start:dev": "cross-env NODE_ENV=development nodemon src/index.ts",
     "start": "NODE_ENV=production node dist/index.js",
     "lint": "eslint --ext .ts ./",

@@ -4,11 +4,19 @@
   "description": "A File structure template for express, reactJs App",
   "main": "index.js",
   "scripts": {
+    "init": "cd server && npm install && cd ../client && npm i",
+    "install": "npm run init",
+    "postinstall": "npm update",
     "prepare": "is-ci || husky install",
     "test": "cd server && npm run test",
     "start": "cd server && npm run start",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "build": "npm run build:client && npm run build:server",
+    "client": "cd client && npm run start",
     "start:dev": "cd server && npm run start:dev",
-    "lint:fix": "cd server && npm run lint:fix"
+    "lint:fix:client": "cd client && npm run lint:fix",
+    "lint:fix": "npm run lint:fix:client && cd server && npm run lint:fix"
   },
   "repository": {
     "type": "git",
